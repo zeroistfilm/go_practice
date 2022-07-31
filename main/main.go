@@ -1,7 +1,17 @@
 package main
 
 func main() {
-	variable_type()
+	//variable_type()
+	//datatype()
+	//operator()
+
+	//logical()
+	//function()
+	//anonymousfunction()
+	//closure()
+	//array()
+	slice()
+	//forloop()
 	//go_defer()
 	//panic_recover()
 	//channel_test()
