@@ -1,6 +1,6 @@
-package main
+package basic
 
-func variable_type() {
+func Variable_type() {
 
 	var a int
 	var f float32 = 11.

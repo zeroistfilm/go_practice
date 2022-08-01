@@ -1,6 +1,6 @@
-package main
+package basic
 
-func datatype() {
+func Datatype() {
 	var i int = 100
 	var u uint = uint(i)
 	var f float32 = float32(i)

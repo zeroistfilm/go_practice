@@ -1,8 +1,8 @@
-package main
+package basic
 
 import "fmt"
 
-func panic_recover() {
+func Panic_recover() {
 	panicTest()
 }
 

@@ -1,8 +1,8 @@
-package main
+package basic
 
 import "fmt"
 
-func logical() {
+func Logical() {
 	i := 1
 	max := 10
 	if val := i * 2; val < max {

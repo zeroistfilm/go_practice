@@ -1,11 +1,11 @@
-package main
+package basic
 
 import (
 	"fmt"
 	"sync"
 )
 
-func go_defer() {
+func Go_defer() {
 	var wg sync.WaitGroup
 
 	wg.Add(3)

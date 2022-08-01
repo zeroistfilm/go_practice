@@ -1,6 +1,6 @@
-package main
+package basic
 
-func anonymousfunction() {
+func Anonymousfunction() {
 	//anony()
 	primary()
 }

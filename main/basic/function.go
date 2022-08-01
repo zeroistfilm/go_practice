@@ -1,6 +1,6 @@
-package main
+package basic
 
-func function() {
+func Function() {
 	say("hello")
 
 	msg := "Hello"

@@ -1,8 +1,8 @@
-package main
+package basic
 
 import "fmt"
 
-func slice() {
+func Slice() {
 	var a []int
 	a = []int{1, 2, 3}
 	b := []int{4, 5, 6}

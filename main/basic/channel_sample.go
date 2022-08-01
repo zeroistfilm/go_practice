@@ -1,11 +1,11 @@
-package main
+package basic
 
 import (
 	"fmt"
 	"time"
 )
 
-func channel_test() {
+func Channel_test() {
 	ch := make(chan int)
 
 	go func() {
@@ -17,7 +17,7 @@ func channel_test() {
 	println(i)
 }
 
-func unbufferedchannel_wait() {
+func Unbufferedchannel_wait() {
 	//Unbuffered Channel로서 이 채널에서는 하나의 수신자가 데이타를 받을 때까지
 	//송신자가 데이타를 보내는 채널에 묶여 있게 된다.
 	done := make(chan bool)
@@ -30,7 +30,7 @@ func unbufferedchannel_wait() {
 	<-done
 }
 
-func bufferedChannel1() {
+func BufferedChannel1() {
 	// 당장의 수신자가 없더라도 버퍼만큼은 데이터를 보낼 수 있다.
 	c := make(chan int, 1)
 	c <- 1
@@ -38,7 +38,7 @@ func bufferedChannel1() {
 
 }
 
-func bufferedChannel2() {
+func BufferedChannel2() {
 	done := make(chan bool, 10)
 	go func() {
 		for i := 0; i < 10; i++ {
@@ -60,7 +60,7 @@ func bufferedChannel2() {
 
 }
 
-func sendReceiveChannel() {
+func SendReceiveChannel() {
 	ch := make(chan string, 1)
 	sendChan(ch, "hihihi")
 	receiveChan(ch)
@@ -76,7 +76,7 @@ func receiveChan(ch <-chan string) {
 	fmt.Println(data)
 }
 
-func channelClose() {
+func ChannelClose() {
 	ch := make(chan int, 2)
 	ch <- 1
 	ch <- 2
@@ -91,7 +91,7 @@ func channelClose() {
 	}
 }
 
-func channelRange() {
+func ChannelRange() {
 	ch := make(chan int, 2)
 	ch <- 1
 	ch <- 2
@@ -111,7 +111,7 @@ func channelRange() {
 
 }
 
-func channelSelect() {
+func ChannelSelect() {
 	done1 := make(chan bool)
 	done2 := make(chan bool)
 	go run1(done1)

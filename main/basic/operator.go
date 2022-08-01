@@ -1,6 +1,6 @@
-package main
+package basic
 
-func operator() {
+func Operator() {
 	var k int = 10
 	var p = &k
 	println(p)

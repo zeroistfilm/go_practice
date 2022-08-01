@@ -1,6 +1,6 @@
-package main
+package basic
 
-func array() {
+func Array() {
 	//basicArray()
 	arrayinit()
 }

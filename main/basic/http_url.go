@@ -1,4 +1,4 @@
-package main
+package basic
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ func head(url string) {
 	resp, _ := http.Head(url)
 	c <- resp
 }
-func http_url() {
+func Http_url() {
 
 	go head("https://namu.wiki")
 	go head("https://www.google.com")

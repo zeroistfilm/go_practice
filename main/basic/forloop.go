@@ -1,6 +1,6 @@
-package main
+package basic
 
-func forloop() {
+func Forloop() {
 
 	n := 1
 	for n < 200 {
